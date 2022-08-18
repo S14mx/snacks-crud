@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Name: {{snack.name}}</h2>
+<p>Description: {{snack.description}}</p>
+<p>Purchaser: {{snack.purchaser}}</p>
+<a href='{% url "update_snack" snack.id %}'><button>Update Snack</button></a>
+<a href='{% url "delete_snack" snack.id %}'><button>Delete Snack</button></a>
+
+{% endblock content %}
