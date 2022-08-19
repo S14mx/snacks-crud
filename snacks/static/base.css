@@ -1,0 +1,16 @@
+div {
+  text-align: center;
+}
+
+h2 {
+  color: blueviolet;
+  padding-bottom: 1rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}

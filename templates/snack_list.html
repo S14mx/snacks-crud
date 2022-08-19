@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<h2>Snack List</h2>
-<ul>
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<div>
+  <h2>Snack List</h2>
+
   {% for snack in object_list %}
-  <li><a href="{% url 'detail_snack' snack.pk %}">{{snack.name}}</a></li>
+
+  <p><a href="{% url 'detail_snack' snack.id %}">{{snack.name}}</a><br></p>
+
   {% endfor %}
-</ul>
+
+</div>
 {% endblock content %}

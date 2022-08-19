@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <nav>
-    <a href='{% url "list_snack" %}'>Snack List</a>
-    <a href='{% url "create_snack" %}'>Create Snack</a>
+  <nav style="text-align: center; font-size: 2rem; margin-top: 2rem">
+    <a style="margin: 0 2rem" href='{% url "list_snack" %}'>Snack List</a>
+    <a style="margin: 0 2rem" href='{% url "create_snack" %}'>Create Snack</a>
   </nav>
   {% block content %}
   {% endblock content %}
