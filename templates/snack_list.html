@@ -7,7 +7,7 @@
 
   {% for snack in object_list %}
 
-  <p><a href="{% url 'detail_snack' snack.id %}">{{snack.name}}</a><br></p>
+  <p><a style="color:grey; font-size: 1.8rem;" href="{% url 'detail_snack' snack.id %}">{{snack.name}}</a><br></p>
 
   {% endfor %}
 
