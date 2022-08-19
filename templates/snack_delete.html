@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-
-<h1>Delete Snack</h1>
-
-<form action="" method="POST">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <p>Do you really want to delete "{{ movie.name }}"?</p>
-  <input type="submit" value="OK">
-</form>
-
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<div>
+  <h1>Delete Snack</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p>Do you really want to delete "{{ movie.name }}"?</p>
+    <input type="submit" value="OK">
+  </form>
+</div>
 {% endblock content %}

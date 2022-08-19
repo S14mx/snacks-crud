@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-
-<h1>Update Snack</h1>
-
-<form action="" method="POST">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="SAVE">
-</form>
-
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<div>
+  <h1>Update Snack</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="SAVE">
+  </form>
+</div>
 {% endblock content %}
